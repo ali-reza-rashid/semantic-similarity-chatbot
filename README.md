@@ -24,23 +24,7 @@ Rather than relying on exact keyword matching, the system compares the semantic 
 
 ## Architecture
 
-Airtable Knowledge Base
-        ↓
-    REST API
-        ↓
-Question & Answer Data
-        ↓
-SentenceTransformer
-        ↓
-Vector Embeddings
-        ↓
-Cosine Similarity
-        ↓
-Highest Similarity Score
-        ↓
-   Threshold ≥ 0.4
-      ↙       ↘
-   Answer    Rejection
+Airtable Knowledge Base => REST API => Question & Answer Data => SentenceTransformer => Vector Embeddings => Cosine Similarity => Highest Similarity Score => Threshold ≥ 0.4 => Return answer, otherwise reject.
 
 ## Technologies Used
 
